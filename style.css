@@ -1,0 +1,53 @@
+@keyframes movingTopToBottom {
+0% {
+    top: -200px;
+}
+100% {
+    top: 300px;
+}
+}
+.container {
+    height: 600px;
+}
+@keyframes movingBottomToUp {
+    0% {
+        top: 300px;
+    }
+    20% {
+        top: 350px;
+    }
+    100% {
+        top: -200px;
+    }
+}
+#form{
+    position: relative;
+    border-radius: 10px;
+    animation: movingTopToBottom 2s ;
+    animation-fill-mode: forwards;
+}
+#form2{
+    position: relative;
+    animation: movingBottomToUp 1s ;
+    animation-fill-mode: forwards;
+}
+
+#username-field{
+    width: 300px;
+    margin: 0 auto;
+    border-width: 3px;
+    text-align: center;
+}
+#start-button{
+    width: 120px;
+}
+
+#body{
+    background-image: url(gif.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    overflow: auto;
+}
+
